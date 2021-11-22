@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/nest"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bargraphpopulation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#F3F5FF"
+            app:cardCornerRadius="30dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/populationGraphLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Population"
+                    android:textColor="#000"
+                    android:textSize="10sp"></TextView>
+
+
+
+
+
+                <com.jjoe64.graphview.GraphView
+                    android:id="@+id/bar_graph_population"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dip"
+                    android:layout_below="@id/populationGraphLabel"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                     />
+
+                <TextView
+                    android:id="@+id/bargrap2hmaleLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bar_graph_population"
+                    android:layout_alignLeft="@id/bar_graph_population"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Male"
+                    android:textColor="#000"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/bargraph2femaleLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bar_graph_population"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="Female"
+                    android:textColor="#000"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/bargraph2othersLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bar_graph_population"
+                    android:layout_alignRight="@id/bar_graph_population"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Others"
+                    android:textColor="#000"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/graph_age_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bargraphpopulation"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#F3F5FF"
+            app:cardCornerRadius="30dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ageGraphLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Age"
+                    android:textColor="#000"
+                    android:textSize="10sp"></TextView>
+
+                <Spinner
+                    android:id="@+id/agegraphspinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="5dp">
+
+                </Spinner>
+
+                <com.jjoe64.graphview.GraphView
+                    android:id="@+id/bar_graph"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dip"
+                    android:layout_below="@id/agegraphspinner"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/bargraphmaleLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bar_graph"
+                    android:layout_alignLeft="@id/bar_graph"
+                    android:layout_marginLeft="30dp"
+                    android:text="Male"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#000"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/bargraphfemaleLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bar_graph"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="Female"
+                    android:textColor="#000"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/bargraphothersLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bar_graph"
+                    android:layout_alignRight="@id/bar_graph"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Others"
+                    android:textColor="#000"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/piegraphcarddisease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/graph_age_card"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+
+
+            app:cardBackgroundColor="#F3F5FF"
+            app:cardCornerRadius="30dp">
+
+
+            <RelativeLayout
+                android:id="@+id/rel"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diseases"
+                    android:id="@+id/diseaseslabel"
+                    android:textSize="10sp"
+                    android:textColor="#000"
+                   android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="5dp"/>
+                <!--Pie chart to display the data-->
+
+                <org.eazegraph.lib.charts.PieChart
+                    android:id="@+id/piechart"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_below="@id/diseaseslabel"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+
+
+                    android:padding="6dp" />
+
+                <Spinner
+                    android:id="@+id/diseasegraphspinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp" />
+                <!--Creating another linear layout -->
+                <!-- to display pie chart details -->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/diseaserecyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_below="@id/diseasegraphspinner"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/piechart">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/piegraphcardeducation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/piegraphcarddisease"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#F3F5FF"
+            app:cardCornerRadius="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--Pie chart to display the data-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Education"
+                    android:textSize="10sp"
+                    android:id="@+id/educationlabel"
+                    android:textColor="#000"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="5dp"/>
+                <org.eazegraph.lib.charts.PieChart
+                    android:id="@+id/piechart1"
+                    android:layout_width="120dp"
+android:layout_below="@id/educationlabel"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+
+                    android:padding="6dp" />
+
+                <Spinner
+                    android:id="@+id/educationgraphspinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="5dp" />
+                <!--Creating another linear layout -->
+                <!-- to display pie chart details -->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/educationrecycler"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/piechart1"
+                    android:layout_below="@id/educationgraphspinner"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"></androidx.recyclerview.widget.RecyclerView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/piegraphcardnutrition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/piegraphcardeducation"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#F3F5FF"
+            app:cardCornerRadius="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--Pie chart to display the data-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nutritionlabel"
+                    android:text="Nutrition"
+                    android:textSize="10sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="5dp"/>
+                <org.eazegraph.lib.charts.PieChart
+                    android:id="@+id/piechart2"
+                    android:layout_width="120dp"
+                    android:layout_below="@id/nutritionlabel"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+
+                    android:padding="6dp" />
+
+                <Spinner
+                    android:id="@+id/nutritiongraphspinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="5dp" />
+                <!--Creating another linear layout -->
+                <!-- to display pie chart details -->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/nutritionrecycler"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/piechart2"
+                    android:layout_below="@id/nutritiongraphspinner"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"></androidx.recyclerview.widget.RecyclerView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bargraphincomecard"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/piegraphcardnutrition"
+            app:cardBackgroundColor="#F3F5FF"
+            app:cardCornerRadius="30dp"
+            android:layout_margin="20dp">
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/Barchart2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

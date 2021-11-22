@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_collect_data">
+
+    <fragment
+        android:id="@+id/nav_collect_data"
+        android:name="com.project.healthstatus.ui.collect_data.CollectDataFragment"
+        android:label="@string/menu_collect_data"
+        tools:layout="@layout/fragment_collect_data" />
+
+    <fragment
+        android:id="@+id/nav_gather_insights"
+        android:name="com.project.healthstatus.ui.gather_insights.GatherInsightsFragment"
+        android:label="@string/menu_gather_insights"
+        tools:layout="@layout/fragment_gather_insights" />
+
+    <fragment
+        android:id="@+id/nav_manage_data"
+        android:name="com.project.healthstatus.ui.manage_data.ManageDataFragment"
+        android:label="@string/menu_manage_data"
+        tools:layout="@layout/fragment_manage_data" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.project.healthstatus.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.project.healthstatus.ui.about.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
+
+</navigation>

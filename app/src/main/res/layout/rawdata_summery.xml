@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="vertical">
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:layout_marginBottom="50dp">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/villagebasicinfocard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+
+        app:cardCornerRadius="30dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFEFE"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+
+               android:textColor="#000"
+                android:text="Basic information"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/basicinfoarrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/downarrow"></ImageView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/basicinforelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/villagebasicinfocard"
+       android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFF"
+        android:visibility="visible">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#8E8E8E"
+            android:id="@+id/view1"/>
+        <TextView
+            android:id="@+id/registeraionlabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@id/view1"
+            android:text="Registeration number : "
+            android:textColor="#000000"
+
+            android:textSize="10sp"
+
+            />
+
+        <TextView
+            android:id="@+id/regnumbertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/registeraionlabel"
+            android:text="53253547"
+            android:textSize="10sp"></TextView>
+
+
+        <TextView
+            android:id="@+id/populationlabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registeraionlabel"
+            android:layout_margin="10dp"
+            android:text="Population : "
+            android:textColor="#000000"
+            android:textSize="10sp"
+
+            />
+
+        <TextView
+            android:id="@+id/populationtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registeraionlabel"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/populationlabel"
+            android:text="5325"
+            android:textSize="10sp"></TextView>
+
+
+        <TextView
+            android:id="@+id/literacyratelabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/populationlabel"
+            android:layout_margin="10dp"
+            android:text="Literacy rate : "
+            android:textColor="#000000"
+            android:textSize="10sp"
+
+            />
+
+        <TextView
+            android:id="@+id/literacytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/populationlabel"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/literacyratelabel"
+            android:text="40%"
+            android:textSize="10sp"></TextView>
+
+        <TextView
+            android:id="@+id/hospitalslabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/literacyratelabel"
+            android:layout_margin="10dp"
+            android:text="Number of hospitals/clinics : "
+            android:textColor="#000000"
+            android:textSize="10sp"
+
+            />
+
+        <TextView
+            android:id="@+id/hospitalstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/literacyratelabel"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/hospitalslabel"
+            android:text="300"
+            android:textSize="10sp"></TextView>
+
+        <TextView
+            android:id="@+id/familieslabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hospitalslabel"
+            android:layout_margin="10dp"
+            android:text="Registeration number : "
+            android:textColor="#000000"
+            android:textSize="10sp"
+
+            />
+
+        <TextView
+            android:id="@+id/familiestext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hospitalslabel"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/familieslabel"
+            android:text="600000"
+            android:textSize="10sp"></TextView>
+
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/villagesummerycard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/basicinforelative"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="30dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFEFE"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+
+                android:text="Summery"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/summeryimg1"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/downarrow"></ImageView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/summeryrelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/villagesummerycard"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="visible">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/summeryagecard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginRight="20dp"
+
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#EBF6FB">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:text="Age distribution"
+                    android:textColor="#000"
+                    android:textSize="10sp"
+                     />
+
+                <ImageView
+                    android:id="@+id/summeryageimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/downarrow"></ImageView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:id="@+id/summeryagerel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/summeryagecard"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="#FFF"
+            android:visibility="visible">
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#8E8E8E"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adult :"
+                android:textSize="10sp"
+                android:id="@+id/summeryageadultlabel"
+                android:textStyle="italic"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textSize="10sp"
+                android:textColor="#000"
+                android:layout_below="@id/summeryageadultlabel"
+
+                android:id="@+id/summeryageadultmalelabel"
+
+                android:layout_marginLeft="50dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000"
+                android:textSize="10sp"
+                android:layout_toRightOf="@+id/summeryageadultmalelabel"
+                android:layout_below="@id/summeryageadultlabel"
+                android:id="@+id/summeryageadultmaletext"
+
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textSize="10sp"
+                android:textColor="#000"
+                android:layout_below="@id/summeryageadultmalelabel"
+                android:id="@+id/summeryageadultfemalelabel"
+
+                android:layout_marginLeft="50dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1300"
+                android:textSize="10sp"
+                android:layout_toRightOf="@+id/summeryageadultfemalelabel"
+                android:layout_below="@id/summeryageadultmalelabel"
+                android:id="@+id/summeryageadultfemaletext"
+
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Others"
+                android:textSize="10sp"
+                android:layout_below="@id/summeryageadultfemalelabel"
+                android:id="@+id/summeryageadultotherslabel"
+                android:textColor="#000"
+                android:layout_marginLeft="50dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13"
+                android:textSize="10sp"
+                android:layout_toRightOf="@+id/summeryageadultotherslabel"
+                android:layout_below="@id/summeryageadultfemalelabel"
+                android:id="@+id/summeryageadultotherstext"
+
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Children :"
+                android:textSize="10sp"
+                android:id="@+id/summeryagechildrenlabel"
+                android:layout_below="@+id/summeryageadultotherstext"
+                android:textStyle="italic"
+
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textSize="10sp"
+                android:layout_below="@id/summeryagechildrenlabel"
+                android:id="@+id/summeryagechildrenmalelabel"
+                android:textColor="#000"
+                android:layout_marginLeft="50dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000"
+                android:textSize="10sp"
+                android:layout_toRightOf="@+id/summeryagechildrenmalelabel"
+                android:layout_below="@id/summeryagechildrenlabel"
+                android:id="@+id/summeryagechildrenmaletext"
+
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textSize="10sp"
+                android:layout_below="@id/summeryagechildrenmalelabel"
+                android:id="@+id/summeryagechildrenfemalelabel"
+                android:textColor="#000"
+                android:layout_marginLeft="50dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1300"
+                android:textSize="10sp"
+                android:layout_toRightOf="@+id/summeryagechildrenfemalelabel"
+                android:layout_below="@id/summeryagechildrenmalelabel"
+                android:id="@+id/summeryagechildrenfemaletext"
+
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Others"
+                android:textSize="10sp"
+                android:layout_below="@id/summeryagechildrenfemalelabel"
+                android:id="@+id/summeryagechildrenotherslabel"
+                android:textColor="#000"
+                android:layout_marginLeft="50dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13"
+                android:textSize="10sp"
+                android:layout_toRightOf="@+id/summeryagechildrenotherslabel"
+                android:layout_below="@id/summeryagechildrenfemalelabel"
+                android:id="@+id/summeryagechildrenotherstext"
+
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Senior :"
+                android:textSize="10sp"
+                android:id="@+id/summeryageseniorlabel"
+                android:layout_below="@+id/summeryagechildrenotherstext"
+                android:textStyle="italic"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textSize="10sp"
+                android:layout_below="@id/summeryageseniorlabel"
+                android:id="@+id/summeryageseniormalelabel"
+                android:textColor="#000"
+                android:layout_marginLeft="50dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12300"
+                android:textSize="10sp"
+                android:layout_toRightOf="@+id/summeryageseniormalelabel"
+                android:layout_below="@id/summeryageseniorlabel"
+                android:id="@+id/summeryageseniormaletext"
+
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textSize="10sp"
+                android:layout_below="@id/summeryageseniormalelabel"
+                android:id="@+id/summeryageseniorfemalelabel"
+                android:textColor="#000"
+                android:layout_marginLeft="50dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1300"
+                android:textSize="10sp"
+                android:layout_toRightOf="@+id/summeryageseniorfemalelabel"
+                android:layout_below="@id/summeryageseniormalelabel"
+                android:id="@+id/summeryageseniorfemaletext"
+
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Others"
+                android:textSize="10sp"
+                android:layout_below="@id/summeryageseniorfemalelabel"
+                android:id="@+id/summeryageseniorotherslabel"
+                android:textColor="#000"
+                android:layout_marginLeft="50dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13"
+                android:textSize="10sp"
+                android:layout_toRightOf="@+id/summeryageseniorotherslabel"
+                android:layout_below="@id/summeryageseniorfemalelabel"
+                android:id="@+id/summeryageseniorotherstext"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                />
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/summerypopulationcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/summeryagerel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#EBF6FB">
+
+                <TextView
+                    android:id="@+id/summeryliteratelabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Literate population"
+                    android:textSize="10sp"
+                    android:textColor="#000"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="15dp"
+                     />
+
+                <Spinner
+                    android:id="@+id/summeryliteratespinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerVertical="true"
+
+                    android:layout_toRightOf="@id/summeryliteratelabel"
+                    android:background="#F3F2F2" />
+                <ImageView
+                    android:id="@+id/summeryimg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/downarrow"></ImageView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:id="@+id/literatepopulationrel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/summerypopulationcard"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFF"
+            android:visibility="visible">
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#8E8E8E"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male : "
+                android:textSize="10sp"
+                android:textColor="#000"
+                android:id="@+id/summeryliteratemalelabel"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12300"
+                android:textSize="10sp"
+                android:layout_toRightOf="@+id/summeryliteratemalelabel"
+
+                android:id="@+id/summeryliteratemaletext"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female : "
+                android:textSize="10sp"
+                android:layout_below="@id/summeryliteratemalelabel"
+                android:id="@+id/summeryliteratefemalelabel"
+                android:textColor="#000"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1300"
+                android:textSize="10sp"
+                android:layout_toRightOf="@+id/summeryliteratefemalelabel"
+                android:layout_below="@id/summeryliteratemalelabel"
+                android:id="@+id/summeryliteratefemaletext"
+
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Others : "
+                android:textSize="10sp"
+                android:textColor="#000"
+                android:layout_below="@id/summeryliteratefemalelabel"
+                android:id="@+id/summeryliterateotherslabel"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13"
+                android:textSize="10sp"
+                android:layout_toRightOf="@+id/summeryliterateotherslabel"
+                android:layout_below="@id/summeryliteratefemalelabel"
+                android:id="@+id/summeryliterateotherstext"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                />
+        </RelativeLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/summerydiseasecard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/literatepopulationrel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#EBF6FB">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:id="@+id/summerydiseaselabel"
+                    android:text="Disease"
+                    android:textSize="10sp"
+                    android:textColor="#000"
+                     />
+
+                <Spinner
+                    android:id="@+id/summerydiseasespinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/summerydiseaselabel"
+                    android:background="#F3F2F2" />
+                <ImageView
+                    android:id="@+id/summerydiseaseimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/downarrow"></ImageView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:id="@+id/summerydiseaserel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/summerydiseasecard"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFF"
+            android:visibility="visible">
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#8E8E8E"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male : "
+                android:textSize="10sp"
+                android:textColor="#000"
+                android:id="@+id/summerydiseasemalelabel"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12300"
+                android:textSize="10sp"
+                android:layout_toRightOf="@+id/summerydiseasemalelabel"
+
+                android:id="@+id/summerydiseasemaletext"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female : "
+                android:textSize="10sp"
+                android:layout_below="@id/summerydiseasemalelabel"
+                android:id="@+id/summerydiseasefemalelabel"
+                android:textColor="#000"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1300"
+                android:textSize="10sp"
+                android:layout_toRightOf="@+id/summerydiseasefemalelabel"
+                android:layout_below="@id/summerydiseasemalelabel"
+                android:id="@+id/summerydiseasefemaletext"
+
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Others : "
+                android:textSize="10sp"
+                android:textColor="#000"
+                android:layout_below="@id/summerydiseasefemalelabel"
+                android:id="@+id/summerydiseaseotherslabel"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13"
+                android:textSize="10sp"
+                android:layout_toRightOf="@+id/summerydiseaseotherslabel"
+                android:layout_below="@id/summerydiseasefemalelabel"
+                android:id="@+id/summerydiseaseotherstext"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                />
+        </RelativeLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/summeryincomecard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/summerydiseaserel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#EBF6FB">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:id="@+id/summeryincomelabel"
+                    android:text="Income"
+                    android:textSize="10sp"
+                    android:textColor="#000"
+                    />
+
+                <Spinner
+                    android:id="@+id/summeryincomespinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/summeryincomelabel"
+                    android:background="#F3F2F2" />
+                <ImageView
+                    android:id="@+id/summeryincomeimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/downarrow"></ImageView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:id="@+id/summeryincomerel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/summeryincomecard"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFF"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Count : "
+                android:textSize="10sp"
+                android:textColor="#000"
+                android:id="@+id/summeryincomemalelabel"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textSize="10sp"
+                android:layout_toRightOf="@+id/summeryincomemalelabel"
+
+                android:id="@+id/summeryincomemaletext"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="15dp"
+                />
+
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/summerynutritioncard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/summeryincomerel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#EBF6FB">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:id="@+id/summerynutritionlabel"
+                    android:text="Nutrition"
+                    android:textSize="10sp"
+                    android:textColor="#000"
+                    />
+
+                <Spinner
+                    android:id="@+id/summerynutritionspinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/summerynutritionlabel"
+                    android:background="#F3F2F2" />
+                <ImageView
+                    android:id="@+id/summerynutritionimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/downarrow"></ImageView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:id="@+id/summerynutritionrel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/summerynutritioncard"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFF"
+            android:visibility="visible">
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#8E8E8E"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male : "
+                android:textSize="10sp"
+                android:textColor="#000"
+                android:id="@+id/summerynutritionmalelabel"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12300"
+                android:textSize="10sp"
+                android:layout_toRightOf="@+id/summerynutritionmalelabel"
+
+                android:id="@+id/summerynutritionmaletext"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female : "
+                android:textSize="10sp"
+                android:layout_below="@id/summerynutritionmalelabel"
+                android:id="@+id/summerynutritionfemalelabel"
+                android:textColor="#000"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1300"
+                android:textSize="10sp"
+                android:layout_toRightOf="@+id/summerynutritionfemalelabel"
+                android:layout_below="@id/summerynutritionmalelabel"
+                android:id="@+id/summerynutritionfemaletext"
+
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Others : "
+                android:textSize="10sp"
+                android:textColor="#000"
+                android:layout_below="@id/summerynutritionfemalelabel"
+                android:id="@+id/summerynutritionotherslabel"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13"
+                android:textSize="10sp"
+                android:layout_toRightOf="@+id/summerynutritionotherslabel"
+                android:layout_below="@id/summerynutritionfemalelabel"
+                android:id="@+id/summerynutritionotherstext"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+</androidx.core.widget.NestedScrollView>
